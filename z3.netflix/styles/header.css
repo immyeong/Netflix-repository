@@ -1,0 +1,142 @@
+.main{
+    background-image: url("../main-img/banner.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(black, transparent);
+    z-index: 10;
+    position: fixed;
+}
+
+.main-logo{
+    height: 40px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.right-section{
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-btn{
+    border-radius: 2px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border-style: none;
+    font-size: 10px;
+    height: 12px;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+}
+
+.navbar-btn:hover{
+    color: gray;
+
+}
+
+.navbar-btn-hide{
+    display: none;
+    margin-right: 10px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border-style: none;
+    font-size: 10px;
+    height: 12px;
+    text-wrap: nowrap;
+    flex-wrap: nowrap;
+
+}
+
+.navbar-btn-hide:hover{
+    color: gray;
+}
+
+.triangle{
+    height: 8px;
+    width: 8px;
+}
+
+
+.left-section{
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.right-button{
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+}
+
+.button{
+    position: relative;
+}
+
+.notification-count{
+    position: absolute;
+    top: 0;
+    left: 20px;
+    background-color: red;
+    padding: 0px 2px 0px 2px;
+    border-radius: 50%;
+    font-size: 7px;
+}
+
+.user-picture{
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+}
+
+@media (min-width: 750px) and (max-width:1023px){
+    .main{
+        height: 500px;
+    }
+}
+
+@media (min-width : 1024px){
+    .main{
+        height: 600px;
+    }
+
+    .header {
+        height : 100px;
+    }
+
+    .main-logo{
+        height: 60px;
+    }
+
+    .left-section{
+        margin-right: 40px;
+        gap: 35px;
+    }
+
+    .navbar-btn{
+        display: none;
+    }
+
+    .navbar-btn-hide{
+        display: unset;
+    }
+}

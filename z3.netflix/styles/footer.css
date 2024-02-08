@@ -1,0 +1,40 @@
+.footer{
+    padding: 50px 0px 15px 30px;
+    position: relative;
+}
+
+.social-links{
+    display: flex;
+    gap: 20px;
+}
+
+.footer-info{
+    margin-top: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 100px;
+    list-style-type: none;
+}
+
+.footer-info a{
+    font-size: 13px;
+    text-decoration: none;
+    color: grey;
+}
+
+.copyright-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 10px;
+    color: grey;
+    text-wrap: wrap;
+}
+
+@media (min-width : 1024px){
+    .footer-info{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
